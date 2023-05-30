@@ -3,11 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   /* margin-right: 3rem;
+    margin-left: 3rem; */
 }
-body{
-    margin-right: 3rem;
-    margin-left: 3rem;
+.marg{
+    margin-right: 4rem;
+    margin-left: 4rem;
 }
+
+.marg-2{
+    background-color: #F8F8F8;
+    padding-top: 4rem;
+}
+
+
 .No-gap{
     gap: 0;
 }
@@ -21,10 +30,11 @@ nav  ul img{
 
 
 
+
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
    
 
     
@@ -35,10 +45,34 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    
+    
+    /* border: 1px solid grey; */
+    /* box-shadow: 10px 7px 19px 5px grey; */
+    /* border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px; */
+    /* border-radius: 30px; */
+    
     /* margin-top: 1.5rem; */
+
 
     
 }
+nav ul li:hover{
+    font-size: 19px;
+    font-weight: bold;
+    transition: all .4s;
+
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+
 .sign{
     border: 1px solid red;
     border-radius: 25px;
@@ -109,7 +143,7 @@ nav{
 
 }
 
-svg{
+.child svg{
     position: absolute;
     top:50%;
     transform: translateY(-50%);  
@@ -125,10 +159,13 @@ svg{
 /* -------------------------------second page css--------------------------------- */
 
 .second-header{
+    
     text-align: center;
 
 }
+
 h1{
+
     font-size: 40px;
     margin-bottom: 1.5rem;
 }
@@ -147,9 +184,11 @@ h1{
 }
 .box{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 4rem;
     margin-top: 5rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
     
 }
 .boxes:hover{
@@ -209,6 +248,14 @@ footer{
 
     
 }
+/* -----for all butttons---- */
+ button:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+    transition: all .5s;
+}
+/* --------------------- */
 
 .combine-footer1{
     margin-top: 12rem;
@@ -246,6 +293,7 @@ footer{
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
+
 
 .testimonials{
     display: flex;
@@ -303,14 +351,31 @@ footer{
     
 }
 
+.tests:hover{
+    transform: translate(10px, -10px);
+    transition: all .5s;
+    background-color: lightgrey;
+}
+
+
+/* ------------------------------------------subscribe section---------------------------------- */
 
 .subscribe {
-    border: 1px solid gray;
+    box-shadow: 0px 3px 5px 1px rgba(176, 176, 176, 0.851);
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem;
+    width: 80%;
+    margin-left: 8rem;
+    margin-right: 4rem;
     align-items: center;
-    padding: 10px 40px 10px 40px;
+    padding: 3rem;
+    position: absolute;
+    top: -18%;
+    z-index: 4;
+    background-color: white;
+    /* transform: translateY(100%); */
+    /* margin-bottom: 5rem; */
 
     
     
@@ -332,12 +397,23 @@ footer{
     margin-bottom: 1rem;
 }
 
+
+
+/* -------------------------------------subscribe-section-ends---------------------------------------- */
+
+
+
+
 .arrow{
-    border: 1px solid red;
+    border: 2px solid red;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     margin: 7px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     
    
 
@@ -345,18 +421,21 @@ footer{
 .lines:first-child{
     height: 19px;
     width: 50px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 30px;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 3.9rem;
     background-color: red;
-    border:3px solid red
+    /* border:3px solid red */
 }
 .lines:not(:first-child){
     height: 19px;
     width: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 50%;
-    margin: 1rem;
+    background-color: lightgrey;
+
+    margin: 1rem .5rem;
 
 }
 
@@ -369,10 +448,84 @@ footer{
 }
 .wrap2{
     display: flex;
-    margin-right: 5rem;
+    margin-right: 3.3rem;
     gap: 2rem;
 }
 .wrap{
     display: flex;
     /* margin-right: 7rem; */
+}
+
+.arrow svg{
+    height: 30px;
+}
+
+.arrow:hover{
+    background-color: red;
+    transform: translate(1px, -1px);
+    transition: all .5s;
+
+}
+
+
+/* ---------------------footer-parts------------------------ */
+
+
+
+.footer footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-right: 7rem;
+    margin-left: 5rem;
+    /* margin-bottom: 9rem; */
+
+    
+
+}
+.outro .logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: .5rem;
+}
+.outro span{
+    color: rgb(46, 45, 45);
+}
+
+
+.footer-icons{
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+footer ul li {
+    list-style-type: none;
+    font-size: 19px;
+    color: gray;
+    /* line-height: 1rem; */
+}
+footer ul{
+    line-height: 3rem;
+}
+footer ul li:first-child{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: black;
+}
+.footer-lists{
+    display: flex;
+    gap: 8rem;
+}
+.footer{
+    
+    margin-top: 4rem;
+    position: relative;
+    padding-top: 10rem;
+    margin-top: 9rem;
+    background-color: #F8F8F8;
+    padding-bottom: 10rem;
+    
 }
